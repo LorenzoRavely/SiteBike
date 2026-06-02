@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Bikes — Mecânica Especializada</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="IMG/cropped_image.png">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="logo">
+      Doctor <span>Bikes</span>
+    </div>
+    <ul id="navMenu">
+      <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
+      <li><a href="#sobre" onclick="closeMenu()">Sobre</a></li>
+      <li><a href="#servicos" onclick="closeMenu()">Serviços</a></li>
+      <li><a href="#processo" onclick="closeMenu()">Processo</a></li>
+      <li><a href="#loja" onclick="closeMenu()">Loja</a></li>
+      <li class="mobile-only"><a href="https://wa.me/5511976527640" class="nav-cta" onclick="closeMenu()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        WhatsApp
+      </a></li>
+    </ul>
+    <div class="desktop-only">
+      <a href="https://wa.me/5511976527640" class="nav-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-left">
+      <div class="hero-badge">Mecânico especializado em bikes</div>
+      <h1>Sua bike<br>merece o<br><em>melhor cuidado</em></h1>
+      <p>Nacionais e importadas. Diagnóstico preciso, peças de qualidade e mão de obra especializada em Jundiaí–SP. Mais
+        de 4 anos de experiência no mercado.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5511976527640" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Agendar revisão
+        </a>
+        <a href="#servicos" class="btn-outline">Ver serviços →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-num">793+</div>
+          <div class="hstat-label">Posts publicados</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">1.3k</div>
+          <div class="hstat-label">Seguidores</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">4+</div>
+          <div class="hstat-label">Anos de experiência</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">500+</div>
+          <div class="hstat-label">Bikes atendidas</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="wheel-wrap">
+        <div class="wheel-outer" id="wheelOuter"></div>
+        <div class="wheel-inner"></div>
+        <div class="wheel-center">BIKES</div>
+        <div class="float-badge fb1">
+          <strong>5,0 ★</strong>
+          <span>Google Reviews</span>
+        </div>
+        <div class="float-badge fb2">
+          <strong>24–48h</strong>
+          <span>Prazo médio de entrega</span>
+        </div>
+        <div class="float-badge fb3">
+          <strong>500+</strong>
+          <span>Bikes atendidas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marquee">
+      <span class="marquee-item">REVISÃO COMPLETA <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">TROCA DE ROLAMENTOS <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SUSPENSÃO <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">RODAS TUBELESS <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SHIMANO <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SRAM <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">TREK <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SPECIALIZED <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SCOTT <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">GIANT <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">REVISÃO COMPLETA <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">TROCA DE ROLAMENTOS <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SUSPENSÃO <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">RODAS TUBELESS <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SHIMANO <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SRAM <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">TREK <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SPECIALIZED <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SCOTT <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">GIANT <span class="marquee-dot">◆</span></span>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-grid">
+      <div class="sobre-img-wrap fade">
+        <div class="sobre-img-placeholder">
+          <h2></h2>
+        </div>
+        <div class="sobre-tag">Daniel Camargo — Fundador</div>
+      </div>
+      <div class="sobre-text fade fade-d2">
+        <div class="section-label">Quem somos</div>
+        <h2>Paixão por bikes,<br>precisão no serviço</h2>
+        <p>A Doctor Bikes nasceu da paixão do Daniel Camargo pelo ciclismo. Com mais de 4 anos no mercado, construímos
+          uma reputação sólida em Jundiaí–SP atendendo bikes nacionais e importadas das melhores marcas do mundo.</p>
+        <p>Trabalhamos com diagnóstico detalhado antes de qualquer orçamento, porque acreditamos que transparência é
+          tudo na relação com o cliente.</p>
+        <div class="sobre-checks">
+          <div class="check-item">
+            <div class="check-icon">✓</div> Diagnóstico gratuito antes do orçamento
+          </div>
+          <div class="check-item">
+            <div class="check-icon">✓</div> Peças originais e de qualidade
+          </div>
+          <div class="check-item">
+            <div class="check-icon">✓</div> Garantia em todos os serviços
+          </div>
+          <div class="check-item">
+            <div class="check-icon">✓</div> Atendimento via WhatsApp em tempo real
+          </div>
+        </div>
+        <div class="section-label">Marcas atendidas</div>
+        <div class="brand-strip">
+          <div class="brand-chip">Trek</div>
+          <div class="brand-chip">Specialized</div>
+          <div class="brand-chip">Scott</div>
+          <div class="brand-chip">Giant</div>
+          <div class="brand-chip">Cannondale</div>
+          <div class="brand-chip">Shimano</div>
+          <div class="brand-chip">SRAM</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="servicos-header">
+      <div>
+        <div class="section-label">O que fazemos</div>
+        <h2>Nossos serviços</h2>
+      </div>
+      <a href="https://wa.me/5511976527640" class="btn-outline">Solicitar orçamento →</a>
+    </div>
+    <div class="servicos-grid">
+      <div class="card card-featured fade">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div>
+          <h3>Revisão Completa</h3>
+          <p>Checagem de todos os componentes da sua bike com diagnóstico detalhado. Ajuste de freios, câmbios,
+            pedivela, mesa, selim e muito mais. Saída garantida.</p>
+          <div class="card-price">A partir de R$ 120,00</div>
+        </div>
+      </div>
+      <div class="card fade fade-d1">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+        </div>
+        <h3>Rolamentos</h3>
+        <p>Troca de rolamentos cerâmicos e convencionais para bikes nacionais e importadas.</p>
+        <div class="card-price">Consultar</div>
+      </div>
+      <div class="card fade fade-d2">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Suspensão</h3>
+        <p>Manutenção e regulagem de garfos e amortecedores ProShock e similares.</p>
+        <div class="card-price">A partir de R$ 80,00</div>
+      </div>
+      <div class="card fade fade-d1">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Rodas Tubeless</h3>
+        <p>Conversão e manutenção de rodas tubeless para melhor performance no trail.</p>
+        <div class="card-price">A partir de R$ 60,00</div>
+      </div>
+      <div class="card fade fade-d2">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <h3>Transmissão</h3>
+        <p>Substituição de correntes, cassetes, coroas e ajuste fino do sistema de câmbio.</p>
+        <div class="card-price">A partir de R$ 50,00</div>
+      </div>
+      <div class="card fade fade-d3">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><bolt/><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>E-Bikes</h3>
+        <p>Manutenção especializada em bikes elétricas: motor, bateria e sistema eletrônico.</p>
+        <div class="card-price">Consultar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="processo" id="processo">
+    <div class="section-label">Como funciona</div>
+    <h2>Do contato à entrega</h2>
+    <div class="steps">
+      <div class="step fade">
+        <div class="step-num">01</div>
+        <div class="step-text"><h4>Contato</h4>
+        <p>Fale conosco pelo WhatsApp e descreva o problema da sua bike.</p></div>
+      </div>
+      <div class="step fade fade-d1">
+        <div class="step-num">02</div>
+        <div class="step-text"><h4>Diagnóstico</h4>
+        <p>Fazemos uma análise completa e gratuita antes de qualquer orçamento.</p></div>
+      </div>
+      <div class="step fade fade-d2">
+        <div class="step-num">03</div>
+        <div class="step-text"><h4>Orçamento</h4>
+        <p>Enviamos um orçamento detalhado com prazo e valor total sem surpresas.</p></div>
+      </div>
+      <div class="step fade fade-d3">
+        <div class="step-num">04</div>
+        <div class="step-text"><h4>Execução</h4>
+        <p>Serviço realizado com peças de qualidade e técnica especializada.</p></div>
+      </div>
+      <div class="step fade fade-d4">
+        <div class="step-num">05</div>
+        <div class="step-text"><h4>Entrega</h4>
+        <p>Bike pronta, testada e com garantia. Você pedala seguro.</p></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="section-label">O que dizem</div>
+    <h2>Clientes satisfeitos</h2>
+    <div class="depo-grid">
+      <div class="depo fade">
+        <div class="depo-stars">★★★★★</div>
+        <q>Daniel fez um ótimo trabalho na minha bike, revisão e algumas melhorias, sem falar que
+          Muito gente boa !</q>
+        <div class="depo-author">
+          <div class="depo-avatar">RS</div>
+          <div>
+            <div class="depo-name">Rafael Souza</div>
+            <div class="depo-sub">Cliente desde 2022</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo fade fade-d1">
+        <div class="depo-stars">★★★★★</div>
+        <q>Excelente atendimento, trabalho realizado com muita qualidade, me forneceu várias dicas de como manter a bike em ordem. Muito satisfeito</q>
+        <div class="depo-author">
+          <div class="depo-avatar">CF</div>
+          <div>
+            <div class="depo-name">Camila Ferreira</div>
+            <div class="depo-sub">Cliente desde 2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo fade fade-d2">
+        <div class="depo-stars">★★★★★</div>
+        <q>Como é satisfatório ver a dedicação do Doctor!!! Produtos de qualidade e estrutura TOP. Daniel é muito atencioso, pode ir sem medo!!!</q>
+        <div class="depo-author">
+          <div class="depo-avatar">MA</div>
+          <div>
+            <div class="depo-name">Marcos Antônio</div>
+            <div class="depo-sub">Cliente desde 2021</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + CONTATO -->
+  <section class="faq-section" id="contato">
+    <div class="faq-grid">
+      <div>
+        <div class="section-label">Dúvidas frequentes</div>
+        <h2>Perguntas & respostas</h2>
+        <br><br>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Vocês atendem todas as marcas de bike? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">Sim! Atendemos bikes nacionais e importadas de todas as marcas, incluindo Trek,
+            Specialized, Scott, Giant, Cannondale e muitas outras.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Preciso agendar ou posso chegar sem hora? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">Recomendamos agendar pelo WhatsApp para garantir atendimento rápido. Mas chegadas sem hora
+            também são atendidas, conforme disponibilidade do dia.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Vocês oferecem garantia nos serviços? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">Sim! Todos os serviços têm garantia. O prazo varia conforme o tipo de serviço e peça
+            utilizada, mas é sempre informado no orçamento.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Qual o prazo médio de entrega? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">O prazo médio é de 24 a 48 horas para a maioria dos serviços. Serviços mais complexos
+            que precisam de peças específicas podem levar um pouco mais ou dependendo da demanda.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Vocês buscam e entregam a bike em casa? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">Sim! Conforme a disponibilidade, podemos buscar e entregar a bike em sua casa. Para verificar as condições e combinar os detalhes, entre em contato conosco pelo WhatsApp. 😊
+</div>
+        </div>
+      </div>
+      <div class="faq-side fade">
+        <div class="section-label">Contato direto</div>
+        <h3>Fale com a gente</h3>
+        <p>Prefere tirar sua dúvida diretamente com o Daniel? Entre em contato pelos canais abaixo. Respondemos rápido!
+        </p>
+        <div class="contact-info">
+          <div class="ci">
+            <span class="ci-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <span>Endereço</span>
+              <strong>Rua Silvia Jardim, 469 / Vianelo — Jundiaí, SP</strong>
+            </div>
+          </div>
+          <div class="ci">
+            <span class="ci-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div>
+              <span>WhatsApp</span>
+              <strong>(11) 97652-7640</strong>
+            </div>
+          </div>
+          <div class="ci">
+            <span class="ci-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </span>
+            <div>
+              <span>Instagram</span>
+              <strong>@doctorbikes81</strong>
+            </div>
+          </div>
+          <div class="ci">
+            <span class="ci-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <div>
+              <span>Horário</span>
+              <strong>Seg–Sáb: 8h às 18h</strong>
+            </div>
+          </div>
+        </div>
+        <br>
+        <a href="https://wa.me/5511976527640" class="btn-primary"
+          style="width:100%;justify-content:center;margin-top:8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <!-- CTA FINAL -->
+    <div class="cta-final">
+      <h2>Pronto para agendar<br>sua revisão?</h2>
+      <p>Rua Silvia Jardim, 469 / Vianelo — Jundiaí, SP</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/5511976527640" target="_blank" rel="noopener noreferrer" class="cta-dark">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a href="https://www.instagram.com/doctorbikes81/" target="_blank" rel="noopener noreferrer" class="cta-white">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Ver Instagram
+        </a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            Doctor <span>Bikes</span>
+          </div>
+          <p>Mecânica especializada em bikes nacionais e importadas em Jundiaí–SP. Diagnóstico preciso, peças de
+            qualidade e mão de obra especializada.</p>
+          <div class="socials">
+            <a class="social" href="https://www.instagram.com/doctorbikes81/" target="_blank" title="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a class="social" href="https://wa.me/5511976527640" target="_blank" title="WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+            <a class="social" href="https://www.instagram.com/doctorbikes81/" target="_blank" title="TikTok">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#">Revisão Completa</a></li>
+            <li><a href="#">Rolamentos</a></li>
+            <li><a href="#">Suspensão</a></li>
+            <li><a href="#">Rodas Tubeless</a></li>
+            <li><a href="#">Transmissão</a></li>
+            <li><a href="#">E-Bikes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Depoimentos</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Marcas</h4>
+          <ul>
+            <li><a href="#">Trek</a></li>
+            <li><a href="#">Specialized</a></li>
+            <li><a href="#">Scott</a></li>
+            <li><a href="#">Giant</a></li>
+            <li><a href="#">Shimano</a></li>
+            <li><a href="#">SRAM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Feito com muito ❤️ Por @lorenzoravely</span>
+        <span>@doctorbikes81</span>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a class="wa-float" href="https://wa.me/5511976527640" title="WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="db_sync.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
